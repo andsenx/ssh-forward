@@ -1,0 +1,11 @@
+ssh:
+  host: "127.0.0.1"
+  port: 22
+  user: "test"
+  password: "test" # 或使用 private_key 方式
+
+forwards:
+  - local: "127.0.0.1:28848"
+    remote: "127.0.0.1:8848"
+  - local: "127.0.0.1:23306"
+    remote: "127.0.0.1:3306"
